@@ -1,15 +1,17 @@
 pipeline {
     agent any
+    tools {maven 'Maven'}
+
 
     stages {
-        stage('stage 1') {
+        stage('Compile Stage') {
             steps {
-                echo 'Building..'
+                sh 'mvn clean install'
             }
         }
-                stage('stage 2') {
+                stage('Run Automation') {
                     steps {
-                        echo 'Building 2..'
+                        sh 'mvn test'
                     }
                 }
 
