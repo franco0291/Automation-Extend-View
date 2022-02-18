@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="Test.CreatingAProgramTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TestNumberofExercises"/>
+          <include name="CreateAProgramTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.CreatingAProgramTest -->
+      <class name="Test.HomeTest">
+        <methods>
+          <include name="CHeckLoginWorks"/>
+          <include name="checkLogoutWorks"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.HomeTest -->
+      <class name="Test.LoginTest">
+        <methods>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- Test.LoginTest -->
+      <class name="Test.CatalogTest">
+        <methods>
+          <include name="CheckWorkoutsButton"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Test.CatalogTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
